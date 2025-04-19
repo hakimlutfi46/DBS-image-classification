@@ -33,16 +33,6 @@ Proyek ini bertujuan untuk membangun model deep learning yang mampu mengklasifik
 ### **Konversi Model**
 Model berhasil dikonversi ke dalam 3 format untuk kebutuhan deployment:
 
-saved_model/
-├── saved_model.pb
-├── variables/
-├── tflite/
-│   ├── model.tflite
-│   └── label.txt
-└── tfjs_model/
-    ├── model.json
-    └── group1-shard1of1.bin
-
 - Format `SavedModel`: digunakan untuk keperluan inferensi lokal atau deployment di server.
 - Format `TFLite`: memungkinkan deployment pada perangkat mobile atau embedded.
 - Format `TensorFlow.js`: dapat dijalankan langsung pada browser.
