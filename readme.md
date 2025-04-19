@@ -33,7 +33,15 @@ Proyek ini bertujuan untuk membangun model deep learning yang mampu mengklasifik
 ### **Konversi Model**
 Model berhasil dikonversi ke dalam 3 format untuk kebutuhan deployment:
 
-saved_model/ ├───saved_model.pb ├───variables/ ├───tflite/ │ ├───model.tflite │ └───label.txt └───tfjs_model/ ├───model.json └───group1-shard1of1.bin
+saved_model/
+├── saved_model.pb
+├── variables/
+├── tflite/
+│   ├── model.tflite
+│   └── label.txt
+└── tfjs_model/
+    ├── model.json
+    └── group1-shard1of1.bin
 
 - Format `SavedModel`: digunakan untuk keperluan inferensi lokal atau deployment di server.
 - Format `TFLite`: memungkinkan deployment pada perangkat mobile atau embedded.
@@ -57,13 +65,6 @@ saved_model/ ├───saved_model.pb ├───variables/ ├───tflit
 - PIL (Pillow)
 - TensorFlow Lite Converter
 - TensorFlow.js Converter
-
----
-
-## 📁 Struktur Folder
-
-project/ ├── dataset/ # Original dataset ├── dataset_split/ # Dataset setelah split (train/val/test) ├── saved_model/ # Model dalam format SavedModel │ ├── tflite/ # Model dalam format TensorFlow Lite │ └── tfjs_model/ # Model dalam format TensorFlow.js ├── best_model.h5 # Model terbaik dari training ├── sample*.jpg # Gambar sample untuk inference └── README.md
-
 
 ---
 
