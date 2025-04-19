@@ -1,0 +1,9 @@
+numpy
+tensorflow
+gdown
+Pillow
+matplotlib
+seaborn
+scikit-learn
+tensorflowjs
+keras
